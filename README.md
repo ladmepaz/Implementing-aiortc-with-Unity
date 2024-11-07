@@ -39,6 +39,13 @@ La preparación del entorno consta de la creación de un canvas UI, panel y RawI
   <img src="/Imagenes/Scene.png" alt="Create UI Canvas" width="300">
 </p>
 Adjunte el contenido de la carpera  **C#** a su entrono y asegurece de tener WebSockets ya instalado:
+
 <p align="center">
   <img src="/Imagenes/Scripts.png" alt="Scrtips" width="400">
+</p>
+
+Asigne el script WebRTCManager.cs al objeto WebSocket, asignele al script el RawImage que creó, e indique el puerto "Port" y la direccion ip en "Server Ip" donde del despositivo donde desee ejecutar el script server.py, por ejemplo:
+
+<p align="center">
+  <img src="/Imagenes/WebSocket.png" alt="Configurar script WebRTCManager.cs">
 </p>
