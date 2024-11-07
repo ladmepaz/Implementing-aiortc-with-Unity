@@ -19,9 +19,9 @@ Al archivo `WebRTCManager.cs` se le debe agragar la IP del dispositivo donde se 
 
 ### Preparación del entorno en Unity:
 
-El primer paso es agregar la librería WebSockets-Sharp. Se descarga **websocket-sharp.dll** a través de [NuGet Gallery](https://www.nuget.org/), descomprima el archivo **.nupkg**, ingrese a la carpeta lib, en ella encontrará el **.dll**, se adjunta junto a los archivos de Unity en **Assets/Plugins**. Puede encontrar la documentacion aca: [websocket-sharp](https://github.com/sta/websocket-sharp/tree/master).
+El primer paso es agregar la librería WebSockets-Sharp. Se descarga **websocket-sharp.dll** a través de [NuGet Gallery](https://www.nuget.org/), descomprima el archivo **.nupkg**, ingrese a la carpeta lib, en ella encontrará el **.dll**, se adjunta junto a los archivos de Unity en **Assets/Plugins**. Puede encontrar la documentacion en: [websocket-sharp](https://github.com/sta/websocket-sharp/tree/master).
 
-WebRTC: la versión implementada para el protocolo de conexión es la 2.4.0-exp.11 · October 04, 2022. Con esta versión se logró establecer una correcta conexión para el envio de los ICE Candidates y la transmisión de las SDP. A través de Window/Package Manager, y agregando el paquete al entorno por medio de Add package from git URL... Puede encontrar la documentacion aca: [Unity](https://docs.unity3d.com/Packages/com.unity.webrtc@2.4/manual/index.html)
+WebRTC: la versión implementada para el protocolo de conexión es la 2.4.0-exp.11 · October 04, 2022. Con esta versión se logró establecer una correcta conexión para el envio de los ICE Candidates y la transmisión de las SDP. A través de Window/Package Manager, y agregando el paquete al entorno por medio de Add package from git URL... Puede encontrar la documentacion en: [Unity](https://docs.unity3d.com/Packages/com.unity.webrtc@2.4/manual/index.html)
 
 ### Dependencia adicional
 
@@ -33,24 +33,25 @@ com.unity.webrtc@2.4.0-exp.11
 
 ## Entorno Unity
 
-La preparación del entorno consta de la creación de un canvas UI, panel y RawImage en el entorno, por ejemplo:
+La preparación del entorno consta de la creación de un canvas UI, panel, RawImage y un objeto vacio WebSocket, dónde se asignará el script, por ejemplo:
 
 <p align="center">
   <img src="/Imagenes/Scene.png" alt="Create UI Canvas" width="300">
 </p>
-Adjunte el contenido de la carpera  **C#** a su entrono y asegurece de tener WebSockets ya instalado:
+
+Adjunte el contenido de la carpera **`C#`** a su entrono y asegurece de tener WebSockets ya instalado:
 
 <p align="center">
   <img src="/Imagenes/Scripts.png" alt="Scrtips" width="400">
 </p>
 
-Asigne el script `WebRTCManager.cs` al objeto WebSocket, asignele al script el RawImage que creó, e indique el puerto "Port" y la direccion ip en "Server Ip" (Sin espacios ni caracteres especiales) del despositivo donde desee ejecutar el script server.py, por ejemplo:
+Asigne el script `WebRTCManager.cs` al objeto WebSocket, asignele al script el RawImage que creó, e indique el puerto "Port" y la direccion ip en "Server Ip" (Sin espacios ni caracteres especiales) del despositivo donde desee ejecutar el script `server.py`, por ejemplo:
 
 <p align="center">
   <img src="/Imagenes/WebSocket.png" alt="Configurar script WebRTCManager.cs">
 </p>
 
-Configure el objeto RawImage, el este caso se ajusta a 640x480:
+Configure el objeto RawImage, en este caso se ajusta a 640x480:
 
 <p align="center">
   <img src="/Imagenes/RawImage.png" alt="Configuara RawImage">
