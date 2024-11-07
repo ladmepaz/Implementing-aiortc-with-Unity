@@ -35,16 +35,10 @@ com.unity.webrtc@2.4.0-exp.11
 
 La preparación del entorno consta de la creación de un canvas UI, panel y RawImage en el entorno, por ejemplo:
 
-<div style="display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 20px;">
-  <div style="text-align: center;">
-    <img src="/Imagenes/Scene.png" alt="Create UI Canvas" width="400" style="border: 2px solid #ddd; border-radius: 8px; padding: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-    <p style="font-style: italic; color: #555;">Figura 1: Creación del Canvas UI</p>
-  </div>
-
-  <div style="text-align: center;">
-    <img src="/Imagenes/Scripts.png" alt="Scripts" width="400" style="border: 2px solid #ddd; border-radius: 8px; padding: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-    <p style="font-style: italic; color: #555;">Figura 2: Scripts adjuntos</p>
-  </div>
-</div>
-
-Adjunte el contenido de la carpeta **C#** a su entorno y asegúrese de tener WebSockets ya instalado.
+<p align="center">
+  <img src="/Imagenes/Scene.png" alt="Create UI Canvas" width="300">
+</p>
+Adjunte el contenido de la carpera  **C#** a su entrono y asegurece de tener WebSockets ya instalado:
+<p align="center">
+  <img src="/Imagenes/Scripts.png" alt="Scrtips" width="400">
+</p>
