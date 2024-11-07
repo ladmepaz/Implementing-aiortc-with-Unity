@@ -64,10 +64,10 @@ Para este ejemplo, se ejecutó server.py en una Raspberry Pi 4, que está conect
   <img src="/Imagenes/Rasp.png" alt="Iniciando el servidor">
 </p>
 
-Asegurese de primero ejecutar server.py, el siguinete paso es inicializar el entorno unity, si asignó de manera correcta la direccion Ip en el entorno, en la consola podrá observar la trasmicion de los **ICE Candidates** y **SPDs**, por último se carga la textura de manera autmatica al RawImage:
+Asegúrese de primero ejecutar `server.py`. El siguiente paso es inicializar el entorno Unity. Si asignó de manera correcta la dirección IP en el entorno, en la consola podrá observar la transmisión de los **ICE Candidates** y **SDPs**. Por último, se carga la textura de manera automática al RawImage:
 
- <p align="center">
-  <img src="/Imagenes/Video.png" alt="Reciviendo video">
+<p align="center">
+  <img src="/Imagenes/Video.png" alt="Recibiendo video">
 </p>
 
-Como puede observar, la recepción de video ha comenzado, en este caso se vizualiza el tecalo y las Raspberry Pi usada en esta practica.
+Como puede observar, la recepción de video ha comenzado. En este caso se visualiza el teclado y las Raspberry Pi usadas en esta práctica.
