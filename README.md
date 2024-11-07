@@ -49,3 +49,9 @@ Asigne el script WebRTCManager.cs al objeto WebSocket, asignele al script el Raw
 <p align="center">
   <img src="/Imagenes/WebSocket.png" alt="Configurar script WebRTCManager.cs">
 </p>
+
+Configure el objeto RawImage, el este caso se ajusta a 640x480:
+
+<p align="center">
+  <img src="/Imagenes/RawImage.png" alt="Configuara RawImage">
+</p>
