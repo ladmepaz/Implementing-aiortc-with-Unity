@@ -15,7 +15,7 @@ public class WebRTCManager : MonoBehaviour
     public event Action<Texture> RemoteVideoReceived;
     private RTCPeerConnection peerConnection;
     private WebSocket _ws;
-    [SerializeField] private string _serverIp = "192.168.0.105"; // Cambia esto según la IP de tu Raspberry Pi
+    [SerializeField] private string _serverIp = "xxx.xxx.x.xxx"; //IP  Raspberry Pi or Pc
     [SerializeField] private string _port = "8765";
     [SerializeField] private RawImage rawImage;
 
@@ -62,7 +62,7 @@ public class WebRTCManager : MonoBehaviour
         else
         {
             Debug.LogError(
-                $"Unhandled track of type: {trackEvent.Track.GetType()}. In this tutorial, we're handling only video tracks.");
+                $"Unhandled track of type: {trackEvent.Track.GetType()}");
         }
     }
     private void OnVideoReceived(Texture texture)
@@ -100,10 +100,10 @@ public class WebRTCManager : MonoBehaviour
             var desc = new RTCSessionDescription { sdp = data.sdp, type = RTCSdpType.Answer };
             if (string.IsNullOrEmpty(desc.sdp) || desc.type != RTCSdpType.Answer)
             {
-                Debug.LogError("SDP o tipo inválido. No se puede proceder con SetRemoteDescription.");
+                Debug.LogError("SDP o tipo invalido. No se puede proceder con SetRemoteDescription.");
                 return;
             }
-            Debug.Log("Estableciendo descripción remota...");
+            Debug.Log("Estableciendo descripcion remota...");
             SetRemoteDescription(desc);
             peerConnection.OnTrack += OnTrack;
         }
@@ -151,7 +151,7 @@ public class WebRTCManager : MonoBehaviour
 
         if (setLocalDescOp.IsError)
         {
-            Debug.LogError("Error al establecer la descripción local: " + setLocalDescOp.Error.message);
+            Debug.LogError("Error al establecer la descripcion local: " + setLocalDescOp.Error.message);
             yield break;
         }
 
@@ -171,11 +171,11 @@ public class WebRTCManager : MonoBehaviour
         var op = peerConnection.SetRemoteDescription(ref desc);
         if (op.IsError)
         {
-            Debug.LogError("Error al establecer la descripción remota: " + op.Error.message);
+            Debug.LogError("Error al establecer la descripcion remota: " + op.Error.message);
         }
         else
         {
-            Debug.Log("Descripción remota establecida correctamente");
+            Debug.Log("Descripcion remota establecida correctamente");
         }
     }
     private void OnDestroy()

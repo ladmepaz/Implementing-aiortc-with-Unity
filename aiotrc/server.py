@@ -2,7 +2,6 @@ import argparse
 import asyncio
 import json
 import logging
-import os
 import platform
 from aiortc import RTCPeerConnection, RTCSessionDescription
 from aiortc.contrib.media import MediaPlayer, MediaRelay
@@ -47,6 +46,7 @@ def force_codec(pc, sender, forced_codec):
         [codec for codec in codecs if codec.mimeType == forced_codec]
     )
 
+
 # Función para manejar las conexiones WebSocket
 async def handle_websocket(websocket, path):
     print("WebSocket connection established")
@@ -85,10 +85,6 @@ async def handle_websocket(websocket, path):
                     if pc.connectionState == "failed":
                         await pc.close()
                         pcs.discard(pc)
-
-                # Crear las pistas de video/audio
-                # video = create_local_tracks(play_from=None, decode=True)[1]
-                # #print("Audio: ", audio)
 
                 # open media source
                 audio, video = create_local_tracks(
@@ -138,8 +134,6 @@ async def handle_websocket(websocket, path):
                 print("Sent answer back to client")
                 # This is a SDP send
                 print(pc.localDescription.sdp)
-            
-                
 
     except Exception as e:
         print(f"Error: {e}")
@@ -195,5 +189,3 @@ if __name__ == "__main__":
         pass
     finally:
         loop.run_until_complete(on_shutdown())
-
-#'''
