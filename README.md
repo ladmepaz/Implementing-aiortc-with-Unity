@@ -1,8 +1,8 @@
-# Implementacion de aiortc con Unity para trasmisión de video
+# Implementación de aiortc con Unity para transmisión de video
 
 ## Descripción del server.py
 
-El server.py es quien inicia la trasmisión de video, este está programado para que la IP de quien ejecute el script, sirva de enlace con el cliente **WebRTC** y **WebSockets**. Las librerías implementadas son [websockets 13.1](https://pypi.org/project/websockets/), y [aiortc](https://github.com/aiortc/aiortc?tab=readme-ov-file).
+El `server.py` es quien inicia la transmisión de video, este está programado para que la IP de quien ejecute el script, sirva de enlace con el cliente **WebRTC** y **WebSockets**. Las librerías implementadas son [websockets 13.1](https://pypi.org/project/websockets/), y [aiortc](https://github.com/aiortc/aiortc?tab=readme-ov-file).
 
 ### Instalación de dependencias
 
@@ -15,7 +15,7 @@ pip install aiortc
 
 ## Descripción de los archivos C#
 
-Al archivo WebRTCManager.cs se le debe agragar la IP del dispositivo donde se ejecute server.py, para iniciar las negociaciaciones de los ICE Candidates y SDPs necesarias para que la trasmisión sea con exito.
+Al archivo `WebRTCManager.cs` se le debe agragar la IP del dispositivo donde se ejecute `server.py`, para iniciar las negociaciaciones de los ICE Candidates y SDPs necesarias para que la trasmisión sea con exito.
 
 ### Preparación del entorno en Unity:
 
@@ -44,7 +44,7 @@ Adjunte el contenido de la carpera  **C#** a su entrono y asegurece de tener Web
   <img src="/Imagenes/Scripts.png" alt="Scrtips" width="400">
 </p>
 
-Asigne el script WebRTCManager.cs al objeto WebSocket, asignele al script el RawImage que creó, e indique el puerto "Port" y la direccion ip en "Server Ip" donde del despositivo donde desee ejecutar el script server.py, por ejemplo:
+Asigne el script `WebRTCManager.cs` al objeto WebSocket, asignele al script el RawImage que creó, e indique el puerto "Port" y la direccion ip en "Server Ip" (Sin espacios ni caracteres especiales) del despositivo donde desee ejecutar el script server.py, por ejemplo:
 
 <p align="center">
   <img src="/Imagenes/WebSocket.png" alt="Configurar script WebRTCManager.cs">
@@ -58,7 +58,7 @@ Configure el objeto RawImage, el este caso se ajusta a 640x480:
 
 ## Iniciar transmision
 
-Para este ejemplo, se ejecutó server.py en una Raspberry Pi 4, que está conectada a la misma red wifi que el computador donde se encunetra el entorno de Unity:
+Para este ejemplo, se ejecutó `server.py` en una Raspberry Pi 4, que está conectada a la misma red wifi que el computador donde se encunetra el entorno de Unity:
 
 <p align="center">
   <img src="/Imagenes/Rasp.png" alt="Iniciando el servidor">
