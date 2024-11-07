@@ -31,7 +31,10 @@ Para la integración de WebRTC en Unity, se debe agregar la siguiente dependenci
 com.unity.webrtc@2.4.0-exp.11
 ```
 
-## Entrono Unity
+## Entorno Unity
 
-La preparacion del entrono consta de la creacion de un canvas UI, panel y RawImage en el entorno, por ejemplo:
-![Create UI Canvas](/Imagenes/Scene.png)
+La preparación del entorno consta de la creación de un canvas UI, panel y RawImage en el entorno, por ejemplo:
+
+<p align="center">
+  <img src="/Imagenes/Scene.png" alt="Create UI Canvas">
+</p>
