@@ -38,3 +38,7 @@ La preparación del entorno consta de la creación de un canvas UI, panel y RawI
 <p align="center">
   <img src="/Imagenes/Scene.png" alt="Create UI Canvas">
 </p>
+Adjunte el contenido de la carpera  **C#** a su entrono y asegurece de tener WebSockets ya instalado:
+<p align="center">
+  <img src="/Imagenes/Scripts.png" alt="Scrtips">
+</p>
