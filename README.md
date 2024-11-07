@@ -1,2 +1,3 @@
-# Implementacion de aiortc con Unity para la trasmisión de video
+# Implementacion de aiortc con Unity para trasmisión de video
+
 Receive video in Unity through transmission implementing aiortc
