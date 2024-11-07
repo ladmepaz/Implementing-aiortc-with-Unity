@@ -69,3 +69,5 @@ Asegurese de primero ejecutar server.py, el siguinete paso es inicializar el ent
  <p align="center">
   <img src="/Imagenes/Video.png" alt="Reciviendo video">
 </p>
+
+Como puede observar, la recepción de video ha comenzado, en este caso se vizualiza el tecalo y las Raspberry Pi usada en esta practica.
