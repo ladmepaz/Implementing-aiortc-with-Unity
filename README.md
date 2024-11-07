@@ -12,3 +12,32 @@ Para instalar las dependencias necesarias, puedes usar los siguientes comandos:
 pip install websockets==13.1
 pip install aiortc
 ```
+
+## Descripción de los archivos C#
+
+Al archivo WebRTCManager.cs se le debe agragar la IP del dispositivo donde se ejecute server.py, para iniciar las negociaciaciones de los ICE Candidates y SDPs necesarias para que la trasmisión sea con exito.
+
+### Preparacipon del entorno en unity:
+
+El primer paso es agregar la libreria WebSockets-Sharp. Aquí tienes el contenido actualizado para tu archivo
+
+README.md
+
+:
+
+````markdown
+Para instalar las dependencias necesarias, puedes usar los siguientes comandos:
+
+```sh
+pip install websockets==13.1
+pip install aiortc
+```
+````
+
+## Descripción de los archivos C#
+
+Al archivo WebRTCManager.cs se le debe agragar la IP del dispositivo donde se ejecute server.py, para iniciar las negociaciaciones de los ICE Candidates y SDPs necesarias para que la trasmisión sea con exito.
+
+### Preparación del entorno en Unity:
+
+El primer paso es agregar la librería WebSockets-Sharp. Se descarga **websocket-sharp.dll** a través de [NuGet Gallery](https://www.nuget.org/), descomprima el archivo **.nupkg**, ingrese a la carpeta lib, en ella encontrará el **.dll**, se adjunta junto a los archivos de Unity en **Assets/Plugins**. Puede encontrar la documentacion aca: [websocket-sharp](https://github.com/sta/websocket-sharp/tree/master).
