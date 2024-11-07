@@ -55,3 +55,17 @@ Configure el objeto RawImage, el este caso se ajusta a 640x480:
 <p align="center">
   <img src="/Imagenes/RawImage.png" alt="Configuara RawImage">
 </p>
+
+## Iniciar transmision
+
+Para este ejemplo, se ejecutó server.py en una Raspberry Pi 4, que está conectada a la misma red wifi que el computador donde se encunetra el entorno de Unity:
+
+<p align="center">
+  <img src="/Imagenes/Rasp.png" alt="Iniciando el servidor">
+</p>
+
+Asegurese de primero ejecutar server.py, el siguinete paso es inicializar el entorno unity, si asignó de manera correcta la direccion Ip en el entorno, en la consola podrá observar la trasmicion de los **ICE Candidates** y **SPDs**, por último se carga la textura de manera autmatica al RawImage:
+
+ <p align="center">
+  <img src="/Imagenes/Video.png" alt="Reciviendo video">
+</p>
