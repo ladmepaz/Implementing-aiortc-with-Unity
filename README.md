@@ -6,7 +6,7 @@ El server.py es quien inicia la trasmisión de video, este está programado para
 
 ### Instalación de dependencias
 
-Para instalar las dependencias necesarias, puedes usar los siguientes comandos:
+Para instalar las dependencias necesarias, puede usar los siguientes comandos:
 
 ```sh
 pip install websockets==13.1
@@ -20,3 +20,13 @@ Al archivo WebRTCManager.cs se le debe agragar la IP del dispositivo donde se ej
 ### Preparación del entorno en Unity:
 
 El primer paso es agregar la librería WebSockets-Sharp. Se descarga **websocket-sharp.dll** a través de [NuGet Gallery](https://www.nuget.org/), descomprima el archivo **.nupkg**, ingrese a la carpeta lib, en ella encontrará el **.dll**, se adjunta junto a los archivos de Unity en **Assets/Plugins**. Puede encontrar la documentacion aca: [websocket-sharp](https://github.com/sta/websocket-sharp/tree/master).
+
+WebRTC: la versión implementada para el protocolo de conexión es la 2.4.0-exp.11 · October 04, 2022. Con esta versión se logró establecer una correcta conexión para el envio de los ICE Candidates y la transmisión de las SDP. A través de Window/Package Manager, y agregando el paquete al entorno por medio de Add package from git URL... Puede encontrar la documentacion aca: [Unity](https://docs.unity3d.com/Packages/com.unity.webrtc@2.4/manual/index.html)
+
+### Dependencia adicional
+
+Para la integración de WebRTC en Unity, se debe agregar la siguiente dependencia:
+
+```sh
+com.unity.webrtc@2.4.0-exp.11
+```
