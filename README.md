@@ -73,7 +73,7 @@ Asegúrese de primero ejecutar `server.py`. El siguiente paso es inicializar el 
 
 Como puede observar, la recepción de video ha comenzado. En este caso se visualiza el teclado y las Raspberry Pi usadas en esta práctica.
 
-#Autores
+# Autores
 [Over Alexander Mejia Rosado](mailto:omejiar@unal.edu.co)
 [Ronsald Mateo Ceballos Lozano](mailto:rceballosl@unal.edu.co)
 
