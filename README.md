@@ -75,5 +75,5 @@ Como puede observar, la recepción de video ha comenzado. En este caso se visual
 
 # Autores
 - [Over Alexander Mejia Rosado](mailto:omejiar@unal.edu.co)
-- [Ronsald Mateo Ceballos Lozano](mailto:rceballosl@unal.edu.co)
+- [Ronald Mateo Ceballos Lozano](mailto:rceballosl@unal.edu.co)
 
